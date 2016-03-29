@@ -13,15 +13,16 @@ public class GsonTest {
 	
 		Gson gson = new Gson();
 		Message msg = new Message("me", "you", "hello.", "201603251020");
-		//ï¿½Ö·ï¿½×ªï¿½ï¿½ÎªjsonObjectï¿½ï¿½ï¿½ï¿½
+		//×Ö·û´®×ª»»ÎªjsonObject¶ÔÏó
 		JsonObject jsonObj = (JsonObject) new JsonParser().parse(gson.toJson(msg));
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//Ìí¼ÓÊôÐÔ
 		jsonObj.addProperty("newProperty", "newValue");
 		
 		System.out.println(gson.toJson(jsonObj));
 		System.out.println(gson.toJson(msg));
 		
-		//this is a test for github ï¿½ï¿½ï¿½Äµï¿½    ä¸­æ–‡çš„
+		//this is a test for ÖÐÎÄ»¹ÊÇÂÒÂë
+		
 	}
 
 }
