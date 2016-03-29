@@ -21,7 +21,8 @@ public class GsonTest {
 		System.out.println(gson.toJson(jsonObj));
 		System.out.println(gson.toJson(msg));
 		
-		//this is a test for github
+		//this is a test for 中文还是乱码
+		//在seven_branch中修改
 		
 	}
 
